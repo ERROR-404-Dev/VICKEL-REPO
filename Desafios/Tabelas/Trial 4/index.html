@@ -6,21 +6,38 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
         }
 
         table{
-            width: 500px;
-            height: 50px;
+            width: 600px;
+            height: 300px;
             border-collapse: collapse;
         }
         th{
-            font-weight: bold;
-            border: 1px solid black;
+            background-color: rgb(117, 115, 115);
+            color: white;
+            font-size: 1.1em;
+            border: 2px solid black;
         }
         td{
-            border: 1px solid black;
+            border: 2px solid black;
             text-align: center;
+            font-weight: bold;
 
+         }
+         #total{
+            background-color: rgb(117, 115, 115);
+            color: white;
+            
+         }
+         #area-th{
+            background-color: white;
+            color: black;
+         }
+         .meda{
+            text-align: left;
+            padding: 2px 0px 2px 5px;
          }
          </style>
     <title>Trial 4</title>
@@ -32,22 +49,61 @@
             <tr>
                 <th rowspan="2" colspan="2">Aréas</th>
                 <th  rowspan="2" colspan="2">Disciplinas</th>
-                <th rowspan="2" colspan="2" >Notas</th>
+                <th  colspan="2" >Notas</th>
                 <th rowspan="2" colspan="2" >Médias</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
                 <th>Nota 2</th>
             </tr>
-            <tr>
-                <th>Exatas</th>
-                <td>Matemtica</td>
-                <td>0.0</td>
-                <td></td>
-                <td></td>
-            </tr>
-
         </thead>
+        <tr>
+            <th id="area-th" colspan="2" rowspan="4">Exatas</th>
+            <td colspan="2">Matemtica</td>
+            <td>0.0</td>
+            <td>0,0</td>
+            <td colspan="2">0.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr id="total">
+            <th class="meda" colspan="6">Media De Exatas</th>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th id="area-th" colspan="2" rowspan="2">Humanas</th>
+            <td colspan="2">Historia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr id="total">
+            <th class="meda" colspan="6">Media De Humanas</th>
+            <td>0.0</td>
+        </tr>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>
